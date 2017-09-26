@@ -1,7 +1,6 @@
 html {
   font-family: Lora, serif;
-  font-weight: bold;
-  color: #FFF;
+  color: #fff;
 }
 
 .masthead {
@@ -17,9 +16,6 @@ html {
 
 .nav {
   text-align: center;
-  border-radius: 8px;
-  border-color: #2d5a4d;
-  border-width: 3px;
 }
 
 .nav a {
@@ -27,23 +23,28 @@ html {
   border-radius: 8px;
   border-color: #2d5a4d;
   border-width: 3px;
-
+  background-color: #467366;
+  color: #fff;
 }
 
 .nav a:hover {
   background-image: url("../images/leaf-icon.svg");
   background-repeat: no-repeat;
-  background-color: #FFF;
+  background-color: #fff;
   color: #2d5a4d;
 }
 
 .banner {
-  background-image: url("../images/banner.jpg");
+  background-image: linear-gradient(to bottom, rgba(16, 52, 41, 0), rgba(16, 52, 41, .8)), url("../images/banner.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: auto;
+
 }
 
 .banner-content {
-
+  padding-top: 20em;
 }
 
 @media only screen and (min-width: 60em) {
