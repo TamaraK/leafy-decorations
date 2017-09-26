@@ -1,9 +1,14 @@
 html {
   font-family: Lora, serif;
+  font-weight: bold;
+  color: #FFF;
 }
 
 .masthead {
-
+  background-color: #588477;
+  background-image: url("../images/leaf-bg.svg");
+  background-repeat: repeat;
+  background-size: 64px;
 }
 
 .logo {
@@ -12,18 +17,29 @@ html {
 
 .nav {
   text-align: center;
+  border-radius: 8px;
+  border-color: #2d5a4d;
+  border-width: 3px;
 }
 
 .nav a {
   text-decoration: none;
+  border-radius: 8px;
+  border-color: #2d5a4d;
+  border-width: 3px;
+
 }
 
 .nav a:hover {
-
+  background-image: url("../images/leaf-icon.svg");
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  color: #2d5a4d;
 }
 
 .banner {
-
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
 }
 
 .banner-content {
