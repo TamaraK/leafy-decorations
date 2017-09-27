@@ -9,6 +9,7 @@ html {
   background-repeat: repeat;
   border-top: 3px solid #2d5a4d;
   border-bottom: 3px solid #2d5a4d;
+  background-size: 64px;
 }
 
 .logo {
@@ -31,29 +32,45 @@ html {
   background-image: url("../images/leaf-icon.svg");
   background-repeat: no-repeat;
   background-color: #fff;
-  color: #2d5a4d;
+  color: #145b1d;
   background-size: 64px;
 }
 
 .banner {
-  background-image: linear-gradient(to bottom, rgba(16, 52, 41, 0), rgba(16, 52, 41, .8)), url("../images/banner.jpg");
+  background-image: linear-gradient(to bottom, rgba(16, 52, 41, 0) 60%, rgba(16, 52, 41, .8)), url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-size: auto;
-  border-bottom: 3px solid #145b1d;
+  border-bottom: 3px solid rgba(16, 52, 41, .8);
 }
 
 .banner-content {
-  padding-top: 19em;
   background-image: url("../images/two-leaves.svg");
   background-repeat: no-repeat;
-  background-size: 98px;
-  background-position: .75em calc(100% - 225px);
+  background-size: 100px;
+  background-position: .75em 11.5em;
   padding-top: 18.75em;
 }
 
+@media only screen and (min-width: 38em) {
+
+  .banner-content {
+    background-position: .75em 10em;
+    padding-top: 17em;
+  }
+
+}
+
 @media only screen and (min-width: 60em) {
+
+  .banner-content {
+    background-position: .75em 9.5em;
+    padding-top: 15.5em;
+  }
+
+  .banner {
+    background-position: bottom;
+  }
 
   .logo {
     text-align: left;
@@ -63,4 +80,12 @@ html {
     text-align: right;
   }
 
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner-content {
+    background-position: .75em 8.75em;
+    padding-top: 14.5em;
+  }
 }
